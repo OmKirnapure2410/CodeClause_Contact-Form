@@ -1,0 +1,73 @@
+.contact-form {
+  background-image: url('https://wallpaperaccess.com/full/3124511.jpg');
+  background-size: cover; 
+  background-position: center; 
+  padding: 165px;
+  color: #cfed0ff0;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.center-heading {
+    text-align: left;
+  }
+.container {
+    width: 300px;
+    margin: 0 ;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding:5px;
+    margin-bottom: 10px;
+  }
+  
+  #captchaContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #captcha {
+    font-weight: bold;
+    padding: 5px;
+  }
+  
+  #refreshCaptcha {
+    margin-left: 10px;
+  }
+  
+  input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  span {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  #error {
+    color: red;
+  }
+  
+  #success {
+    color: green;
+  }
+  
