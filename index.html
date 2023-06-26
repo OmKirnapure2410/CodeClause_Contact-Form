@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body onload="generateCaptcha();">
+  <div class="contact-form">
+  <h1 class="center-heading">Contact Us</h1>
+  <div class="container">
+    <form id="contactForm" onsubmit="return validateForm()">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Full Name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Email Address" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" placeholder="Write Your Message" required></textarea><br><br>
+
+      <div id="captchaContainer">
+        <input type="text" id="txtCaptcha" placeholder="Enter Captcha" required>
+        <span id="captcha"></span>
+        <button type="button" id="refreshCaptcha" onclick="generateCaptcha()">Refresh</button>
+      </div>
+
+      <input type="submit" value="Submit">
+      <span id="error"></span>
+      <span id="success"></span>
+    </form>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
